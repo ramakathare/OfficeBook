@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eeb969fb62b34eaab5de51b764cab6e3" Name="Diagram1">
+        <EntityTypeShape EntityType="OfficeBook.ob_announcements" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_attachments" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_comments" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_files" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_groupfiles" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_groupposts" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_groups" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_groupusers" Width="1.5" PointX="6.75" PointY="4.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_postattachments" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_postcomments" Width="1.5" PointX="4.75" PointY="7.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_postfiles" Width="1.5" PointX="6.75" PointY="7.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_postreactions" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_posts" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_reactions" Width="1.5" PointX="8.75" PointY="6.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_tasks" Width="1.5" PointX="8.75" PointY="9.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_typesof_files" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_typesof_posts" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_typesof_reactions" Width="1.5" PointX="2.75" PointY="10.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_usercomments" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_userfiles" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_userposts" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_userreactions" Width="1.5" PointX="10.75" PointY="9.75" />
+        <EntityTypeShape EntityType="OfficeBook.ob_users" Width="1.5" PointX="12.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

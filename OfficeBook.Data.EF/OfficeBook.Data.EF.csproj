@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F9406B3-038A-4536-8FD8-4D6F3EB80FDA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OfficeBook.Data</RootNamespace>
+    <AssemblyName>OfficeBook.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper.Contrib, Version=1.50.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.Contrib.1.50.0\lib\net45\Dapper.Contrib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataModels\IEntity.cs" />
+    <Compile Include="DataModels\ob_announcements.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_attachments.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_comments.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_files.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_groupfiles.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_groupposts.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_groups.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_groupusers.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_postattachments.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_postcomments.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_postfiles.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_postreactions.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_posts.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_reactions.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_tasks.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_typesof_files.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_typesof_posts.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_typesof_reactions.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_usercomments.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_userfiles.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_userposts.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_userreactions.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ob_users.cs">
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\OfficeBook.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OfficeBook.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\OfficeBook.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OfficeBook.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\OfficeBook.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OfficeBook.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="DataModels\OfficeBook.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OfficeBook.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataModels\OfficeBook.edmx.diagram">
+      <DependentUpon>OfficeBook.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DataModels\OfficeBook.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OfficeBook.edmx</DependentUpon>
+      <LastGenOutput>OfficeBook.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataModels\OfficeBook.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OfficeBook.edmx</DependentUpon>
+      <LastGenOutput>OfficeBook.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

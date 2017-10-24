@@ -1,0 +1,8 @@
+﻿[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}
+div[contenteditable=true] {
+  border: 1px solid #AAA;
+  padding: 5px;
+}
